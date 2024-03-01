@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  border-bottom: 2px solid black;
+}
+.article{
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding-left: 5px;
+  color: white;
+}
+body{
+  background-color: #C0C0C0;
+}
+form{
+  color: white;
+  margin-top: 15px;
+  padding: 5px;
+}
+ .form{
+   border: 2px solid black;
+   border-radius: 20px;
+ }
+ .error-mess{
+   color: #de7474;
+   margin: 10px 0;
+   display: none;
+ }
