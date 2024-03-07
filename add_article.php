@@ -27,7 +27,6 @@
         <button type="button" id="add_article" class="btn btn-outline-light mb-10">Добавить</button>
       </form>
     </div>
-    <?php $datetime = date("Y-m-d H:i:s"); ?> <br>
 
     <?php require "blocks/footer.php" ;?>
     <script>

@@ -75,7 +75,7 @@
               datatype: 'html',
               success: function(data){
                 if(data === "Done"){
-                  window.location.replace('private.php')
+                  window.location.replace('autorization.php')
                 }
                 else{
                   $('#error-block').show();

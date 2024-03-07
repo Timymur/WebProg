@@ -66,9 +66,10 @@
               data: { },
               datatype: 'html',
               success: function(data){
-
-                  document.location.reload(true);
+                if(data === "Done"){
+                  window.location.replace('autorization.php');
                 }
+              }
           });
       });
 

@@ -54,11 +54,16 @@
         <?php
             while($article = $query->fetch(PDO::FETCH_OBJ)){
 
-              echo "<div class='article bg-dark bg-gradient'>
-                <h1>" . $user->name . " " . $user->surname . "</h1>
-                <p> " . $article->text . " </p>
-                <div>" . $article->datetime . "</div>
-              </div>";
+              echo "<form action='ajax/delete_article.php' method='POST'>
+                <div class='article bg-dark bg-gradient'>
+                        <input type='hidden' class='del' name ='del' id='del' value= " . $article->id . "> 
+                        <h1>" . $user->name . " " . $user->surname . "</h1>
+                        <p> " . $article->text . " </p>
+
+                        <div>" . $article->datetime . "</div>
+                        <div><button id='delete' name='delete' type='submit' class='delete'>Удалить статью</button></div>
+                    </div>
+                    </form>";
             }
 
       ?>
@@ -67,9 +72,6 @@
         </div>
 
       </div>
-
-
-
 
 
   </body>
