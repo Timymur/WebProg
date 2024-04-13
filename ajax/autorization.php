@@ -16,7 +16,6 @@
 
     $pdo = new PDO('mysql:host=localhost;dbname=WebProg','root','');
 
-
     $salt = ";&*$^$*@#";
     $pass = md5($salt . $pass);
 
@@ -32,9 +31,5 @@
     else
       setcookie('email', $email, time()+ 3600*24*30, "/");
 
-
     echo "Done";
-
-
-
- ?>
+?>

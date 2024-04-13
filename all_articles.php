@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
 <head>
   <?php
-      $website_title = 'Личный кабинет';
+      $website_title = 'Все статьи';
       require "blocks/head.php" ;
    ?>
 
